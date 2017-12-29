@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652968095D2F1EABE35B9933 /* Pods_ios_viper_flickr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D3D7362C21DA54DA718795 /* Pods_ios_viper_flickr.framework */; };
 		DC746C121FF6C45B00CDFF23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC746C111FF6C45B00CDFF23 /* AppDelegate.swift */; };
 		DC746C141FF6C45B00CDFF23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC746C131FF6C45B00CDFF23 /* ViewController.swift */; };
 		DC746C171FF6C45B00CDFF23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC746C151FF6C45B00CDFF23 /* Main.storyboard */; };
 		DC746C191FF6C45B00CDFF23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC746C181FF6C45B00CDFF23 /* Assets.xcassets */; };
 		DC746C1C1FF6C45B00CDFF23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC746C1A1FF6C45B00CDFF23 /* LaunchScreen.storyboard */; };
+		DC746C2D1FF6C6EF00CDFF23 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC746C2C1FF6C6EF00CDFF23 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25D3D7362C21DA54DA718795 /* Pods_ios_viper_flickr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_viper_flickr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		319CBC47BF761AF60A48A63F /* Pods-ios-viper-flickr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-viper-flickr.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-viper-flickr/Pods-ios-viper-flickr.release.xcconfig"; sourceTree = "<group>"; };
+		35E93FAA25E4D730AA229432 /* Pods-ios-viper-flickr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-viper-flickr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-viper-flickr/Pods-ios-viper-flickr.debug.xcconfig"; sourceTree = "<group>"; };
 		DC746C0E1FF6C45B00CDFF23 /* ios-viper-flickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-viper-flickr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC746C111FF6C45B00CDFF23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC746C131FF6C45B00CDFF23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		DC746C181FF6C45B00CDFF23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC746C1B1FF6C45B00CDFF23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC746C1D1FF6C45B00CDFF23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC746C2C1FF6C6EF00CDFF23 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652968095D2F1EABE35B9933 /* Pods_ios_viper_flickr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B892A9E4CDD3633EE037DC08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35E93FAA25E4D730AA229432 /* Pods-ios-viper-flickr.debug.xcconfig */,
+				319CBC47BF761AF60A48A63F /* Pods-ios-viper-flickr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C927944A24464C64D958BC7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25D3D7362C21DA54DA718795 /* Pods_ios_viper_flickr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC746C051FF6C45B00CDFF23 = {
 			isa = PBXGroup;
 			children = (
 				DC746C101FF6C45B00CDFF23 /* ios-viper-flickr */,
 				DC746C0F1FF6C45B00CDFF23 /* Products */,
+				B892A9E4CDD3633EE037DC08 /* Pods */,
+				C927944A24464C64D958BC7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,63 @@
 		DC746C101FF6C45B00CDFF23 /* ios-viper-flickr */ = {
 			isa = PBXGroup;
 			children = (
-				DC746C111FF6C45B00CDFF23 /* AppDelegate.swift */,
+				DC746C241FF6C46800CDFF23 /* Application */,
+				DC746C251FF6C47500CDFF23 /* Resources */,
+				DC746C231FF6C46400CDFF23 /* Models */,
+				DC746C261FF6C48100CDFF23 /* Modules */,
+				DC746C271FF6C4C100CDFF23 /* Network */,
+				DC746C281FF6C4C600CDFF23 /* Protocol */,
 				DC746C131FF6C45B00CDFF23 /* ViewController.swift */,
 				DC746C151FF6C45B00CDFF23 /* Main.storyboard */,
+			);
+			path = "ios-viper-flickr";
+			sourceTree = "<group>";
+		};
+		DC746C231FF6C46400CDFF23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC746C241FF6C46800CDFF23 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DC746C111FF6C45B00CDFF23 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DC746C251FF6C47500CDFF23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				DC746C181FF6C45B00CDFF23 /* Assets.xcassets */,
 				DC746C1A1FF6C45B00CDFF23 /* LaunchScreen.storyboard */,
 				DC746C1D1FF6C45B00CDFF23 /* Info.plist */,
+				DC746C2C1FF6C6EF00CDFF23 /* R.generated.swift */,
 			);
-			path = "ios-viper-flickr";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC746C261FF6C48100CDFF23 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DC746C271FF6C4C100CDFF23 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DC746C281FF6C4C600CDFF23 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +146,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC746C201FF6C45B00CDFF23 /* Build configuration list for PBXNativeTarget "ios-viper-flickr" */;
 			buildPhases = (
+				124E8235C937F45B399CBB55 /* [CP] Check Pods Manifest.lock */,
 				DC746C0A1FF6C45B00CDFF23 /* Sources */,
 				DC746C0B1FF6C45B00CDFF23 /* Frameworks */,
 				DC746C0C1FF6C45B00CDFF23 /* Resources */,
+				1B7A57A2E1664E39DB51D7D1 /* [CP] Embed Pods Frameworks */,
+				A991BD5AB0CFD50C8E62627F /* [CP] Copy Pods Resources */,
+				DC746C291FF6C65F00CDFF23 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +210,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		124E8235C937F45B399CBB55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-viper-flickr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B7A57A2E1664E39DB51D7D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-viper-flickr/Pods-ios-viper-flickr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-viper-flickr/Pods-ios-viper-flickr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A991BD5AB0CFD50C8E62627F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-viper-flickr/Pods-ios-viper-flickr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC746C291FF6C65F00CDFF23 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC746C0A1FF6C45B00CDFF23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +296,7 @@
 			files = (
 				DC746C141FF6C45B00CDFF23 /* ViewController.swift in Sources */,
 				DC746C121FF6C45B00CDFF23 /* AppDelegate.swift in Sources */,
+				DC746C2D1FF6C6EF00CDFF23 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +431,7 @@
 		};
 		DC746C211FF6C45B00CDFF23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E93FAA25E4D730AA229432 /* Pods-ios-viper-flickr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +447,7 @@
 		};
 		DC746C221FF6C45B00CDFF23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319CBC47BF761AF60A48A63F /* Pods-ios-viper-flickr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
