@@ -36,6 +36,7 @@ class PhotosRouter: PhotosWireFrame {
     }
     
     func presentDetail(for photo: Photo) {
-        
+        let destination = PhotoDetailRouter.assembleModule(for: photo)
+        viewController?.navigationController?.pushViewController(destination, animated: true)
     }
 }

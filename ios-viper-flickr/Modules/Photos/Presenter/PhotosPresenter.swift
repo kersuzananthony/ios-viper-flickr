@@ -26,6 +26,7 @@ class PhotosPresenter: PhotosPresentation {
 
     // MARK: - PhotosPresentation methods
     func viewDidLoad() {
+        view?.showIndicatorView()
         interactor.fetchPhotos()
     }
     
@@ -37,10 +38,12 @@ class PhotosPresenter: PhotosPresentation {
 // MARK: - PhotosInteractorOutput methods
 extension PhotosPresenter: PhotosInteractorOutput {
     func photosFetchFailed() {
-        self.view?.showNoContentScreen()
+        view?.hideIndicatorView()
+        view?.showNoContentScreen()
     }
     
     func photosFetched(_ photos: [Photo]) {
+        view?.hideIndicatorView()
         self.photos = photos
     }
 }

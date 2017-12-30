@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol PhotosView: class {
+protocol PhotosView: IndicatableView {
     var presenter: PhotosPresentation! { get set }
     
     func showNoContentScreen()
